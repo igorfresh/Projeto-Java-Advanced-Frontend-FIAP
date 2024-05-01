@@ -27,7 +27,7 @@ export function BarChartCategorias() {
           <XAxis dataKey="categoria" />
           <YAxis />
           <Legend />
-          <Bar dataKey="valor" fill="#ff0066"/>
+          <Bar dataKey="valor" fill="#fbff00dd"/>
         </BarChart>
     );
 }

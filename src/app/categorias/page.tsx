@@ -16,7 +16,7 @@ export default async function Categorias() {
       <section className="flex flex-col gap-5 bg-slate-900 p-6 mt-6 rounded min-w-96">
 
         <div className="flex justify-between gap-4">
-          <h2 className="text-2xl font-bold">Categorias Cadastradas</h2>
+          <h2 className="text-2xl font-bold">Categorias de produto</h2>
           <Link href="/categorias/new">
             <Button color="primary" startContent={<Plus size={18} />}>
               nova categoria

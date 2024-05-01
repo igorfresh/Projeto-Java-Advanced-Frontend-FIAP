@@ -13,7 +13,9 @@ import { useFormState } from "react-dom";
 const initialState = {
     message_descricao: '',
     message_valor: '',
-    message_data: '',
+    message_quantidade: '',
+    message_data: ''
+    
 }
 
 
@@ -60,7 +62,9 @@ export function Form(props: { categorias: Array<Categoria> }) {
                 name="quantidade"
                 variant="bordered"
                 labelPlacement={"outside"}
-                isRequired={false}
+                isRequired={true}
+                isInvalid={state?.message_quantidade != ''}
+                errorMessage={state?.message_quantidade}
             />
 
             <Input

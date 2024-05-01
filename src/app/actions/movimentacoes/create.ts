@@ -12,6 +12,7 @@ export async function create(prevState: any, formData: FormData){
     const data = {
         descricao: formData.get("descricao"),
         valor: formData.get("valor"),
+        quantidade: formData.get("quantidade"),
         tipo: formData.get("tipo"),
         categoria: {
             id: formData.get("categoria")
@@ -39,7 +40,9 @@ export async function create(prevState: any, formData: FormData){
         return {
             message_descricao: messages.find( (m: any) => m.campo == "descricao")?.mensagem || '',
             message_valor: messages.find( (m: any) => m.campo == "valorUnitario")?.mensagem || '',
-            message_data: messages.find( (m: any) => m.campo == "data")?.mensagem || '',
+            message_quantidade: messages.find( (m: any) => m.campo == "quantidade")?.mensagem || '',
+            message_data: messages.find( (m: any) => m.campo == "data")?.mensagem || ''
+
         }
     }
     
